@@ -16,7 +16,7 @@ const ALLERGEN_LABELS_ZH = {
 
 const I18N = {
   th: {
-    app_title: "Allergy Alert",
+    app_title: "ThaiTasteGuard",
     tagline: "ถ่ายรูปเมนู เช็ควัตถุดิบ หลีกเลี่ยงสิ่งที่แพ้",
     step1_title: "1. เลือกสารก่อภูมิแพ้ของคุณ",
     step1_hint: "ติ๊กรายการที่คุณแพ้ ระบบจะแจ้งเตือนเมื่อเจอในเมนู",
@@ -84,7 +84,7 @@ const I18N = {
     vendor_cleanup: "กรุณาทำในกระทะ/หม้อ/ครก/เตา ที่ไม่ปนเปื้อนกับวัตถุดิบที่ผมแพ้ครับ",
   },
   en: {
-    app_title: "Allergy Alert",
+    app_title: "ThaiTasteGuard",
     tagline: "Snap a menu, check ingredients, avoid your allergens",
     step1_title: "1. Select your allergens",
     step1_hint: "Check the items you're allergic to — we'll alert you when they appear in dishes",
@@ -152,7 +152,7 @@ const I18N = {
     vendor_cleanup: "Please use a clean wok/pan/mortar/grill — not the one used with my allergens.",
   },
   zh: {
-    app_title: "过敏警报",
+    app_title: "ThaiTasteGuard",
     tagline: "拍菜单照片，查看食材，避开过敏原",
     step1_title: "1. 选择您的过敏原",
     step1_hint: "勾选您过敏的项目，发现菜品含有时系统会提醒",
