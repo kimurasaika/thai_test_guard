@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allergy Alert</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">🛡️🍜</span>
+      <div class="brand-text">
+        <h1 data-i18n="app_title">Allergy Alert</h1>
+        <p class="tagline" data-i18n="tagline"></p>
+      </div>
+      <div class="lang-buttons">
+        <button class="lang-btn" data-lang="th" type="button">ไทย</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="zh" type="button">中文</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 data-i18n="step1_title"></h2>
+      <p class="hint" data-i18n="step1_hint"></p>
+      <div id="allergyList" class="chips"></div>
+
+      <div class="custom-allergy">
+        <label data-i18n="custom_label"></label>
+        <div class="custom-input-row">
+          <input type="text" id="customInput" />
+          <button id="addCustomBtn" class="btn-add" type="button">+</button>
+        </div>
+        <div id="customChips" class="chips custom"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="step2_title"></h2>
+      <p class="hint" data-i18n="step2_hint"></p>
+
+      <div class="upload-row">
+        <label class="btn primary">
+          <span data-i18n="take_photo"></span>
+          <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden />
+        </label>
+        <label class="btn secondary">
+          <span data-i18n="upload_photo"></span>
+          <input type="file" id="fileInput" accept="image/*" hidden />
+        </label>
+      </div>
+
+      <div id="previewWrap" class="preview-wrap hidden">
+        <img id="preview" alt="preview" />
+        <button id="clearBtn" class="btn-clear" type="button">×</button>
+        <p id="sizeInfo" class="size-info"></p>
+      </div>
+
+      <div class="photo-guidelines">
+        <p class="guideline-title" data-i18n="guideline_title"></p>
+        <ul>
+          <li data-i18n="guideline_1"></li>
+          <li data-i18n="guideline_2"></li>
+        </ul>
+      </div>
+
+      <details class="manual">
+        <summary data-i18n="or_type"></summary>
+        <input type="text" id="textInput" />
+      </details>
+
+      <button id="analyzeBtn" class="btn primary big" type="button" disabled>
+        <span data-i18n="analyze_btn"></span>
+      </button>
+    </section>
+
+    <section id="resultSection" class="card hidden">
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p data-i18n="loading"></p>
+      </div>
+
+      <div id="resultContent"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="disclaimer" data-i18n="disclaimer"></p>
+    <div class="emergency">
+      <span data-i18n="emergency_label"></span>
+      <a href="tel:1669" class="emergency-btn"><span data-i18n="emergency_rescue"></span></a>
+      <a href="tel:1646" class="emergency-btn"><span data-i18n="emergency_poison"></span></a>
+    </div>
+    <p class="footer-credit" data-i18n="footer"></p>
+  </footer>
+
+  <script src="/static/i18n.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>

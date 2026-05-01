@@ -1,0 +1,166 @@
+{
+  "allergens": {
+    "peanut": {
+      "th": "ถั่วลิสง",
+      "en": "Peanut",
+      "icon": "🥜",
+      "keywords": [
+        "ถั่วลิสง",
+        "peanut",
+        "groundnut",
+        "ถั่ว"
+      ]
+    },
+    "tree_nut": {
+      "th": "ถั่วเปลือกแข็ง",
+      "en": "Tree nuts",
+      "icon": "🌰",
+      "keywords": [
+        "อัลมอนด์",
+        "เม็ดมะม่วง",
+        "วอลนัท",
+        "พิสตาชิโอ",
+        "almond",
+        "cashew",
+        "walnut",
+        "pistachio"
+      ]
+    },
+    "shellfish": {
+      "th": "กุ้ง/ปู/หอย",
+      "en": "Shellfish",
+      "icon": "🦐",
+      "keywords": [
+        "กุ้ง",
+        "ปู",
+        "หอย",
+        "ปลาหมึก",
+        "shrimp",
+        "crab",
+        "shellfish",
+        "squid",
+        "prawn",
+        "oyster",
+        "กะปิ",
+        "shrimp paste"
+      ]
+    },
+    "fish": {
+      "th": "ปลา/น้ำปลา",
+      "en": "Fish",
+      "icon": "🐟",
+      "keywords": [
+        "ปลา",
+        "น้ำปลา",
+        "fish",
+        "fish sauce",
+        "anchovy",
+        "salmon",
+        "tuna"
+      ]
+    },
+    "egg": {
+      "th": "ไข่",
+      "en": "Egg",
+      "icon": "🥚",
+      "keywords": [
+        "ไข่",
+        "egg",
+        "ไข่ไก่",
+        "ไข่เป็ด"
+      ]
+    },
+    "dairy": {
+      "th": "นม/ผลิตภัณฑ์จากนม",
+      "en": "Dairy",
+      "icon": "🥛",
+      "keywords": [
+        "นม",
+        "เนย",
+        "ชีส",
+        "milk",
+        "butter",
+        "cheese",
+        "cream",
+        "ครีม"
+      ]
+    },
+    "gluten": {
+      "th": "แป้งสาลี/กลูเตน",
+      "en": "Gluten/Wheat",
+      "icon": "🌾",
+      "keywords": [
+        "แป้งสาลี",
+        "กลูเตน",
+        "wheat",
+        "gluten",
+        "บะหมี่",
+        "เส้นบะหมี่",
+        "noodle",
+        "ขนมปัง",
+        "bread",
+        "เกี๊ยว"
+      ]
+    },
+    "soy": {
+      "th": "ถั่วเหลือง/ซีอิ๊ว",
+      "en": "Soy",
+      "icon": "🫘",
+      "keywords": [
+        "ถั่วเหลือง",
+        "ซีอิ๊ว",
+        "เต้าเจี้ยว",
+        "เต้าหู้",
+        "soy",
+        "soya",
+        "soy sauce",
+        "tofu"
+      ]
+    },
+    "sesame": {
+      "th": "งา",
+      "en": "Sesame",
+      "icon": "⚪",
+      "keywords": [
+        "งา",
+        "น้ำมันงา",
+        "sesame",
+        "sesame oil"
+      ]
+    },
+    "msg": {
+      "th": "ผงชูรส (MSG)",
+      "en": "MSG",
+      "icon": "🧂",
+      "keywords": [
+        "ผงชูรส",
+        "msg",
+        "monosodium glutamate"
+      ]
+    },
+    "coconut": {
+      "th": "กะทิ/มะพร้าว",
+      "en": "Coconut",
+      "icon": "🥥",
+      "keywords": [
+        "กะทิ",
+        "มะพร้าว",
+        "coconut",
+        "coconut milk"
+      ]
+    },
+    "spicy": {
+      "th": "พริก/เผ็ด",
+      "en": "Chili/Spicy",
+      "icon": "🌶️",
+      "keywords": [
+        "พริก",
+        "เผ็ด",
+        "chili",
+        "chilli",
+        "spicy",
+        "พริกขี้หนู"
+      ]
+    }
+  }
+}

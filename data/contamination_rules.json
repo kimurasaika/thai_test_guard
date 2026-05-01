@@ -1,0 +1,64 @@
+{
+  "_comment": "Patterns for inferring cross-contamination risk from a dish name. match_at controls position; exclude_if_contains is a blacklist for known false positives. may_contain lists allergen keys that the dish may have due to shared cookware/utensils, even if its own ingredients are clean.",
+  "rules": [
+    {
+      "id": "wok",
+      "patterns": ["ผัด"],
+      "match_at": ["start", "after_prefix"],
+      "prefixes": ["ข้าว", "ก๋วยเตี๋ยว", "บะหมี่", "เส้น", "วุ้นเส้น"],
+      "may_contain": ["shellfish", "fish", "soy"],
+      "reason": {
+        "th": "ใช้กระทะ/น้ำมันร่วมกับเมนูผัดอื่น เช่น ผัดกุ้ง ผัดปลา",
+        "en": "Wok and oil shared with other stir-fried dishes (e.g. shrimp, fish)",
+        "zh": "与其他炒菜共用炒锅和油（如炒虾、炒鱼）"
+      }
+    },
+    {
+      "id": "deep_fried",
+      "patterns": ["ทอด"],
+      "match_at": ["after_protein", "end", "after_prefix"],
+      "prefixes": ["ข้าว"],
+      "may_contain": ["shellfish", "fish", "gluten"],
+      "reason": {
+        "th": "น้ำมันทอดร่วมกับเมนูอื่น เช่น กุ้งทอด ปลาทอด",
+        "en": "Deep-fryer oil shared with other items (e.g. fried shrimp, fried fish)",
+        "zh": "与其他炸物共用炸油（如炸虾、炸鱼）"
+      }
+    },
+    {
+      "id": "grilled",
+      "patterns": ["ปิ้ง", "ย่าง"],
+      "match_at": ["after_protein", "end"],
+      "exclude_if_contains": ["ขนมปัง", "ขนม"],
+      "may_contain": ["shellfish", "fish"],
+      "reason": {
+        "th": "เตา/ตะแกรงย่างร่วมกับเมนูอื่น เช่น กุ้งย่าง ปลาย่าง",
+        "en": "Grill shared with other items (e.g. grilled shrimp, grilled fish)",
+        "zh": "与其他烤物共用烤架（如烤虾、烤鱼）"
+      }
+    },
+    {
+      "id": "som_tum",
+      "patterns": ["ส้มตำ"],
+      "match_at": ["start"],
+      "may_contain": ["shellfish", "fish"],
+      "reason": {
+        "th": "ครกตำเดียวกับส้มตำที่ใส่ปูปลาร้า/กะปิ/น้ำปลา",
+        "en": "Mortar shared with som tum that contains fish sauce / shrimp paste / pickled crab",
+        "zh": "与含鱼露/虾酱/腌蟹的凉拌共用石臼"
+      }
+    },
+    {
+      "id": "curry_paste",
+      "patterns": ["แกง", "พริกแกง", "ฉู่ฉี่", "พะแนง", "มัสมั่น", "เขียวหวาน", "เผ็ด"],
+      "match_at": ["start", "after_prefix", "anywhere"],
+      "prefixes": ["ข้าว"],
+      "may_contain": ["shellfish"],
+      "reason": {
+        "th": "เครื่องแกง/พริกแกงสำเร็จรูปมักมีกะปิ",
+        "en": "Pre-made curry paste typically contains shrimp paste",
+        "zh": "预制咖喱酱通常含虾酱"
+      }
+    }
+  ]
+}
